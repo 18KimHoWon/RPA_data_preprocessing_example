@@ -1,0 +1,468 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="624,702" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart sap:VirtualizedContainerService.HintSize="634,637.3333333333334" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="Int_ProcedureNumber" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Dic_Config" />
+      <Variable x:TypeArguments="x:String" Name="Result_URL" />
+      <Variable x:TypeArguments="x:String" Name="Open_URL" />
+      <Variable x:TypeArguments="ui:Browser" Name="Tab_Asset" />
+      <Variable x:TypeArguments="x:String" Name="AssetFile_Name" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_Asset" />
+      <Variable x:TypeArguments="x:String" Name="Kosis_URL" />
+      <Variable x:TypeArguments="x:String" Name="Save_URL" />
+      <Variable x:TypeArguments="x:String" Name="CSV" />
+      <Variable x:TypeArguments="ui:Browser" Name="delete_browser" />
+      <Variable x:TypeArguments="x:String" Name="csv_Name" />
+      <Variable x:TypeArguments="x:String" Name="excel_Name" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="DT_Config" />
+      <Variable x:TypeArguments="x:String" Name="Str_Income" />
+      <Variable x:TypeArguments="x:String" Name="Str_Expend" />
+    </Flowchart.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.6666666666666643</av:Point>
+        <av:Size x:Key="ShapeSize">60,74.66666666666667</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.33333333333334 300,127.33333333333334</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID6</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,267.33333333333337</av:Point>
+          <av:Size x:Key="ShapeSize">200,84.66666666666667</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,352.00000000000006 300,402</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="프로세스 실행" sap:VirtualizedContainerService.HintSize="200,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,246" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Title="프로세스 시작">
+          <ui:InputDialog.Result>
+            <OutArgument x:TypeArguments="x:Int32">[Int_ProcedureNumber]</OutArgument>
+          </ui:InputDialog.Result>
+        </ui:InputDialog>
+      </Sequence>
+      <FlowStep.Next>
+        <FlowSwitch x:TypeArguments="x:Int32" x:Name="__ReferenceID0" DisplayName="Flow Switch" Expression="[Int_ProcedureNumber]" sap:VirtualizedContainerService.HintSize="70,86.66666666666667" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <av:Point x:Key="ShapeLocation">265,402</av:Point>
+              <av:Size x:Key="ShapeSize">70,86.66666666666667</av:Size>
+              <av:PointCollection x:Key="2Connector">265,445.3333333333333 235,445.3333333333333 235,550 210,550</av:PointCollection>
+              <av:PointCollection x:Key="3Connector">335,423.6666666666667 365,423.6666666666667 365,430.66666666666663 400,430.66666666666663</av:PointCollection>
+              <av:PointCollection x:Key="4Connector">335,445.3333333333333 365,445.3333333333333 365,550 390,550</av:PointCollection>
+              <av:PointCollection x:Key="1Connector">265,423.6666666666667 235,423.6666666666667 235,430.6666666666667 210,430.6666666666667</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <FlowStep x:Key="1" x:Name="__ReferenceID1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">10,388.33333333333337</av:Point>
+                <av:Size x:Key="ShapeSize">200,84.66666666666667</av:Size>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="1번 최대휴가 허용일수" sap:VirtualizedContainerService.HintSize="200,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="최대휴가허용일수\Access_Site.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_33" UnSafe="False" WorkflowFileName="최대휴가허용일수\Access_Site.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_Access_Site">[Kosis_URL]</InArgument>
+                  <OutArgument x:TypeArguments="ui:Browser" x:Key="Out_browser">[delete_browser]</OutArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="최대휴가허용일수\Initiate_Site.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_34" UnSafe="False" WorkflowFileName="최대휴가허용일수\Initiate_Site.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="최대휴가허용일수\File_Download.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_35" UnSafe="False" WorkflowFileName="최대휴가허용일수\File_Download.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_Str_Path">[Save_URL]</InArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="Out_Save_Name">[csv_Name]</OutArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:CloseTab Browser="[delete_browser]" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="388,25.333333333333332" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="최대휴가허용일수\Year_Update.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_36" UnSafe="False" WorkflowFileName="최대휴가허용일수\Year_Update.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_Save_Path">[Save_URL]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_csv_Name">[csv_Name]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_Result_Path">[Result_URL]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_excel_Name">[excel_Name]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="csv">[CSV]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="최대휴가허용일수\Less_Than3days.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_37" UnSafe="False" WorkflowFileName="최대휴가허용일수\Less_Than3days.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_inputPath">[Save_URL]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_outputPath">[Result_URL]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_excel">[excel_Name]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_csv">[csv_Name]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="csv">[CSV]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="최대휴가허용일수\MoreThan_3days.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_38" UnSafe="False" WorkflowFileName="최대휴가허용일수\MoreThan_3days.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_inputPath">[Save_URL]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_outputPath">[Result_URL]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_csv">[csv_Name]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_excel">[excel_Name]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="csv">[CSV]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="최대휴가허용일수\MoreThan_5days.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_39" UnSafe="False" WorkflowFileName="최대휴가허용일수\MoreThan_5days.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_inputPath">[Save_URL]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_outputPath">[Result_URL]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_csv">[csv_Name]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_excel">[excel_Name]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="csv">[CSV]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:Delete ContinueOnError="{x:Null}" ResourceFile="{x:Null}" sap:VirtualizedContainerService.HintSize="388,135.33333333333334" sap2010:WorkflowViewState.IdRef="Delete_1" Path="[Save_URL+&quot;\&quot;+csv_Name+CSV]" />
+            </Sequence>
+          </FlowStep>
+          <FlowStep x:Key="2" x:Name="__ReferenceID2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">10,507.6666666666667</av:Point>
+                <av:Size x:Key="ShapeSize">200,84.66666666666667</av:Size>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="2번 주요재정지표" sap:VirtualizedContainerService.HintSize="200,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="주요재정지표\Delete_File.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_40" UnSafe="False" WorkflowFileName="주요재정지표\Delete_File.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_Save_URL">[Save_URL]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="주요재정지표\Step_One.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_41" UnSafe="False" WorkflowFileName="주요재정지표\Step_One.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="Link_Browser">[Open_URL]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="주요재정지표\Step_Two.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_42" UnSafe="False" WorkflowFileName="주요재정지표\Step_Two.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <OutArgument x:TypeArguments="x:String" x:Key="Str_Income">[Str_Income]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="Str_Expend">[Str_Expend]</OutArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_Save_URL">[Save_URL]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_Result_URL">[Result_URL]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="주요재정지표\Step_Three.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_43" UnSafe="False" WorkflowFileName="주요재정지표\Step_Three.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="Str_Income">[Str_Income]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Str_Expend">[Str_Expend]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_Save_URL">[Save_URL]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_Result_URL">[Result_URL]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="주요재정지표\Step_Four.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_44" UnSafe="False" WorkflowFileName="주요재정지표\Step_Four.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="file_Expend">[Save_URL+"총지출.jpeg"]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="file_Income">[Save_URL+"총수입.jpeg"]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_Save_URL">[Save_URL]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="In_Result_URL">[Result_URL]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </Sequence>
+          </FlowStep>
+          <FlowStep x:Key="3" x:Name="__ReferenceID4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">400,388.3333333333333</av:Point>
+                <av:Size x:Key="ShapeSize">200,84.66666666666667</av:Size>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="3번 재정수입구조 순위" sap:VirtualizedContainerService.HintSize="200,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_28">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="재정수입구조 순위\저장된 파일 삭제.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_49" UnSafe="False" WorkflowFileName="재정수입구조 순위\저장된 파일 삭제.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="Result_URL">
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Result_URL" />
+                  </InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="재정수입구조 순위\Enter_Site_One.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_50" UnSafe="False" WorkflowFileName="재정수입구조 순위\Enter_Site_One.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_Str_SiteURL">
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Open_URL" />
+                  </InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="재정수입구조 순위\Extract_Excel_Two.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_51" UnSafe="False" WorkflowFileName="재정수입구조 순위\Extract_Excel_Two.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_Str_Save">
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Result_URL" />
+                  </InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="재정수입구조 순위\Read_Excel_Three.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_52" UnSafe="False" WorkflowFileName="재정수입구조 순위\Read_Excel_Three.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_Asset">
+                    <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT_Asset" />
+                  </OutArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_Str_Result_URL">
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Result_URL" />
+                  </InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="재정수입구조 순위\Set_Rank_Four.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_53" UnSafe="False" WorkflowFileName="재정수입구조 순위\Set_Rank_Four.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DT_Asset">
+                    <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="DT_Asset" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_Str_Result_URL">
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Result_URL" />
+                  </InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </Sequence>
+          </FlowStep>
+          <FlowStep x:Key="4" x:Name="__ReferenceID5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">390,507.6666666666667</av:Point>
+                <av:Size x:Key="ShapeSize">200,84.66666666666667</av:Size>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="4번 기금 자산운용 순위" sap:VirtualizedContainerService.HintSize="200,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_29">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Enter_Site.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_29" UnSafe="False" WorkflowFileName="기금 자산운용 순위\Enter_Site.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <OutArgument x:TypeArguments="ui:Browser" x:Key="out_Tab_Asset">[Tab_Asset]</OutArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_Str_Open_URL">[Open_URL]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="기금 자산운용 순위\Extract_Excel.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_30" UnSafe="False" WorkflowFileName="기금 자산운용 순위\Extract_Excel.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <OutArgument x:TypeArguments="x:String" x:Key="out_Assetfile_Name">[AssetFile_Name]</OutArgument>
+                  <InArgument x:TypeArguments="ui:Browser" x:Key="in_Tab_Asset">[Tab_Asset]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_Str_Result_URL">[Result_URL]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="기금 자산운용 순위\Read_Excel.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_31" UnSafe="False" WorkflowFileName="기금 자산운용 순위\Read_Excel.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_assetFile_Name">[AssetFile_Name]</InArgument>
+                  <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DT_Asset">[DT_Asset]</OutArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_Str_Result_URL">[Result_URL]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="기금 자산운용 순위\Set_Rank.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,114.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_32" UnSafe="False" WorkflowFileName="기금 자산운용 순위\Set_Rank.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DT_Asset">[DT_Asset]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_AssetFile_Name">[AssetFile_Name]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_Str_Result_URL">[Result_URL]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </Sequence>
+          </FlowStep>
+        </FlowSwitch>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <x:Reference>__ReferenceID2</x:Reference>
+    <FlowStep x:Name="__ReferenceID6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,127.33333333333334</av:Point>
+          <av:Size x:Key="ShapeSize">200,84.66666666666667</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,212 300,267.33333333333337</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="init" sap:VirtualizedContainerService.HintSize="200,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Name="Str_SiteURL" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Read_Config.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="496,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Read_Config.xaml">
+          <ui:InvokeWorkflowFile.Arguments>
+            <InArgument x:TypeArguments="x:String" x:Key="in_Str_ConfigPath">C:\RPA\Config\5조_통합_Config.xlsx</InArgument>
+            <InArgument x:TypeArguments="s:String[]" x:Key="in_StrArr_ConfigSheets">[{"Account", "Path", "Code", "Email"}]</InArgument>
+            <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Dic_Config">[Dic_Config]</OutArgument>
+          </ui:InvokeWorkflowFile.Arguments>
+        </ui:InvokeWorkflowFile>
+        <Sequence DisplayName="변수 초기화" sap:VirtualizedContainerService.HintSize="496,822.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign DisplayName="Assign.1.1" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[Kosis_URL]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[Dic_Config("Kosis_URL").ToString]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Assign.1.2" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[Result_URL]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[Dic_Config("Result_URL").ToString]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Assign.1.3" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[Save_URL]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[Dic_Config("Save_URL").ToString]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Assign.1.4" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_7">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[CSV]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[Dic_Config("csv").ToString]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Assign.1.5" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_8">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[excel_Name]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[Dic_Config("Result_File").ToString]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign DisplayName="Assign.2.1" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_9">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[Open_URL]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[Dic_Config("Open_URL").ToString]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </Sequence>
+      <FlowStep.Next>
+        <x:Reference>__ReferenceID3</x:Reference>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID4</x:Reference>
+    <x:Reference>__ReferenceID5</x:Reference>
+  </Flowchart>
+</Activity>

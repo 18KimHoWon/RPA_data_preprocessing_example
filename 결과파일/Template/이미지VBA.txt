@@ -1,0 +1,21 @@
+Sub InsertImageToExcel(file_Name As String)
+    Dim ws As Worksheet
+    Dim img As Shape
+    Dim cellWidth As Single
+    Dim cellHeight As Single
+    
+    ' 이미지를 삽입할 워크시트를 선택합니다.
+    Set ws = ThisWorkbook.Sheets("Sheet1")
+
+    ' D5 셀의 너비와 높이를 가져옵니다.
+    cellWidth = ws.Range("D5").Width
+    cellHeight = ws.Range("D5:D7").Height
+    
+    ' 이미지를 워크시트에 삽입합니다.
+    Set img = ws.Shapes.AddPicture(file_Name, _
+                                    msoFalse, msoCTrue, 0, 0, cellWidth, cellHeight)
+    
+    ' 이미지의 크기 및 위치를 조정합니다.
+    img.Left = ws.Range("D5").Left
+    img.Top = ws.Range("D5").Top
+End Sub
